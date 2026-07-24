@@ -283,10 +283,6 @@ padding:20px;
 
 }
 
-
-
-
-
 @media(max-width:700px){
 
 
@@ -315,13 +311,39 @@ align-items:center;
 
 }
 
-
 .hero h1{
 
 font-size:35px;
 
 }
+    
+nav a.active{
+    color:#fed7aa;
+    font-weight:bold;
+}
+.card{
+    transition:0.3s ease;
+}
 
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
 
+.gallery img{
+    transition:0.3s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+button{
+    transition:0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
 }
     
