@@ -8,7 +8,7 @@ A modern and responsive **Local Business Website** designed for **Hepsi Café** 
 
 # 📖 Project Overview
 
-The **Hepsi Café Website** is a responsive business website created to establish a strong online presence for a local café. It allows customers to explore the café, browse the menu, view the gallery, locate the business, and contact the café easily.
+The **Hepsi Café Website** is a responsive business website created to establish a strong online presence for a local café. It allows customers to explore the café, browse the menu, view the gallery, learn about the business, and contact the café easily.
 
 This project demonstrates modern frontend web development principles, responsive web design, and user-friendly interface development using HTML, CSS, and JavaScript.
 
@@ -23,7 +23,7 @@ This project provides a simple and effective digital solution that helps busines
 - Build an online presence
 - Showcase food and beverage offerings
 - Display café ambience through a gallery
-- Provide location and contact information
+- Provide business information and contact details
 - Improve customer engagement through a responsive website
 
 ---
@@ -39,7 +39,6 @@ This project provides a simple and effective digital solution that helps busines
 - Image Gallery
 - Contact Section
 - Contact Form
-- Google Maps Integration
 - Mobile-Friendly Layout
 - Modern User Interface
 - Interactive Hover Effects
@@ -86,17 +85,17 @@ FUTURE_FS_03/
 
 # ⚙️ Installation Guide
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/thalathotihepsiba/FUTURE_FS_03.git
 ```
 
-### 2. Open the Project
+## 2. Open the Project Folder
 
-Open the project folder.
+Navigate to the downloaded project folder.
 
-### 3. Run the Website
+## 3. Run the Website
 
 Open the `index.html` file in your preferred web browser.
 
@@ -144,9 +143,9 @@ This website can be used to:
 - Promote a local café business
 - Showcase food and beverages
 - Display café ambience
-- Provide business location
-- Share contact information
-- Improve online customer engagement
+- Share business information
+- Provide contact details
+- Improve customer engagement
 
 ---
 
@@ -156,10 +155,9 @@ The website includes:
 
 - Responsive Homepage
 - About Section
-- Menu Display
+- Menu Showcase
 - Café Gallery
 - Contact Form
-- Google Maps Integration
 
 > Screenshots can be added here after uploading them to the repository.
 
@@ -232,6 +230,6 @@ This project was developed for educational purposes as part of the **Future Inte
 
 ## ⭐ Acknowledgement
 
-This project was successfully completed as part of the **Future Interns Full Stack Web Development Internship**, demonstrating practical knowledge of frontend development, responsive web design, and local business website development.
+This project was successfully completed as part of the **Future Interns – Full Stack Web Development Internship**, demonstrating practical knowledge of frontend development, responsive web design, and local business website development.
 
 Thank you for visiting this repository!
