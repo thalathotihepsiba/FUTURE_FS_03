@@ -1,231 +1,42 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-    scroll-behavior:smooth;
+function scrollToContact() {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+    }
 }
 
-body{
-    background:#fff7ed;
-    color:#333;
-}
+const navLinks = document.querySelectorAll("nav a");
 
-/* Header */
+navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+        navLinks.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
 
-header{
-    background:#7c2d12;
-    color:white;
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-}
+const form = document.querySelector("form");
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-}
+if (form) {
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-.logo{
-    font-size:30px;
-}
+        const name = form.querySelector('input[name="name"]').value.trim();
+        const email = form.querySelector('input[name="email"]').value.trim();
+        const message = form.querySelector('textarea[name="message"]').value.trim();
 
-nav ul{
-    display:flex;
-    list-style:none;
-}
+        if (!name || !email || !message) {
+            alert("Please fill in all the fields.");
+            return;
+        }
 
-nav ul li{
-    margin-left:25px;
-}
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-nav a{
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
-}
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
 
-nav a:hover,
-nav a.active{
-    color:#fed7aa;
-    font-weight:bold;
-}
-
-/* Hero Section */
-
-.hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-
-    url("cafe1.jpg");
-
-    background-size:cover;
-    background-position:center;
-}
-
-.hero h1{
-    font-size:50px;
-}
-
-.hero p{
-    font-size:20px;
-    margin:20px;
-}
-
-/* Buttons */
-
-button{
-    background:#ea580c;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:8px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover{
-    background:#c2410c;
-    transform:scale(1.05);
-}
-
-/* Sections */
-
-section{
-    padding:100px 10%;
-    text-align:center;
-}
-
-section h2{
-    font-size:35px;
-    margin-bottom:30px;
-    color:#7c2d12;
-}
-
-/* Menu Cards */
-
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    width:250px;
-    border-radius:10px;
-    box-shadow:0 5px 15px #ccc;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-/* Gallery */
-
-.gallery{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.gallery img{
-    width:300px;
-    height:220px;
-    object-fit:cover;
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.gallery img:hover{
-    transform:scale(1.05);
-}
-
-/* Contact Form */
-
-form{
-    max-width:400px;
-    margin:auto;
-}
-
-input,
-textarea{
-    width:100%;
-    padding:12px;
-    margin:10px;
-    border-radius:5px;
-    border:1px solid #ccc;
-}
-
-textarea{
-    height:100px;
-}
-
-/* Footer */
-
-footer{
-    background:#7c2d12;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-/* Responsive Design */
-
-@media(max-width:700px){
-
-nav{
-    flex-direction:column;
-}
-
-nav ul{
-    margin-top:15px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-nav ul li{
-    margin:10px;
-}
-
-.cards,
-.gallery{
-    flex-direction:column;
-    align-items:center;
-}
-
-.hero h1{
-    font-size:35px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-section{
-    padding:80px 5%;
-}
-    
-.gallery img{
-    width:100%;
-    max-width:320px;
-    height:auto;
-}
+        alert("Thank you for contacting Hepsi CafÃ©! We will get back to you soon.");
+        form.reset();
+    });
 }
