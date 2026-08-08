@@ -1,247 +1,232 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+<meta name="description"
+    content="Hepsi Café - Fresh coffee, delicious food and a cozy atmosphere in Vijayawada.">
+
+<meta name="keywords"
+    content="Hepsi Café, cafe, coffee, food, Vijayawada, local business">
+
+<meta name="author" content="Thalathoti Hepsiba">
 
 <title>Hepsi Café | Fresh Food & Coffee</title>
 
-<meta name="description" content="Hepsi Café - A modern local café website showcasing fresh coffee, delicious food, menu and contact details.">
+<link rel="icon" type="image/png" href="favicon.png">
 
 <link rel="stylesheet" href="style.css">
-
-<!-- Favicon -->
-<link rel="icon" href="favicon.png">
+```
 
 </head>
 
 <body>
 
+```
 <header>
+    <nav>
 
-<nav>
+        <h1 class="logo">☕ Hepsi Café</h1>
 
-<h1 class="logo">☕ Hepsi Café</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#menu">Menu</a></li>
-
-<li><a href="#gallery">Gallery</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
+    </nav>
 </header>
-
-<!-- Hero Section -->
 
 <section id="home" class="hero">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<h1>Welcome to Hepsi Café</h1>
+        <h1>Welcome to Hepsi Café</h1>
 
-<p>
-Fresh Coffee • Delicious Food • Cozy Atmosphere
-</p>
+        <p>
+            Fresh Coffee • Delicious Food • Cozy Atmosphere
+        </p>
 
-<p>
-Enjoy freshly prepared meals, premium coffee and a relaxing café experience with your friends and family.
-</p>
+        <p>
+            Enjoy premium coffee, freshly prepared meals and a relaxing
+            place to spend quality time with your friends and family.
+        </p>
 
-<button onclick="scrollToContact()">
-Visit Us
-</button>
+        <button type="button" onclick="scrollToContact()">
+            Visit Us
+        </button>
 
-</div>
+    </div>
 
 </section>
-
-<!-- About Section -->
 
 <section id="about">
 
-<h2>About Us</h2>
+    <h2>About Us</h2>
 
-<p>
+    <p>
+        Hepsi Café is a modern local café located in Vijayawada.
+        We serve freshly brewed coffee, delicious snacks and quality meals
+        in a comfortable and friendly environment.
+    </p>
 
-Hepsi Café is a modern local café located in Vijayawada.
-We serve freshly brewed coffee, delicious snacks and quality meals
-in a comfortable and friendly environment.
-
-Our goal is to provide customers with great taste, excellent service
-and a memorable café experience.
-
-</p>
+    <p>
+        Our goal is to provide customers with great taste, excellent service
+        and a memorable café experience.
+    </p>
 
 </section>
-
-<!-- Menu Section -->
 
 <section id="menu">
 
-<h2>Our Special Menu</h2>
+    <h2>Our Special Menu</h2>
 
-<div class="cards">
+    <div class="cards">
 
-<div class="card">
-<h3>☕ Espresso</h3>
-<p>Rich and Fresh Coffee - ₹80</p>
-</div>
+        <div class="card">
+            <h3>☕ Espresso</h3>
+            <p>Rich & Fresh Coffee - ₹80</p>
+        </div>
 
-<div class="card">
-<h3>🥪 Veg Sandwich</h3>
-<p>Crispy and Healthy - ₹120</p>
-</div>
+        <div class="card">
+            <h3>🥪 Veg Sandwich</h3>
+            <p>Crispy & Healthy - ₹120</p>
+        </div>
 
-<div class="card">
-<h3>🍕 Pizza</h3>
-<p>Cheese Loaded Pizza - ₹250</p>
-</div>
+        <div class="card">
+            <h3>🍕 Pizza</h3>
+            <p>Cheese Loaded - ₹250</p>
+        </div>
 
-<div class="card">
-<h3>🍔 Burger</h3>
-<p>Classic Veg Burger - ₹180</p>
-</div>
+        <div class="card">
+            <h3>🍔 Burger</h3>
+            <p>Classic Veg Burger - ₹180</p>
+        </div>
 
-<div class="card">
-<h3>🍟 French Fries</h3>
-<p>Hot and Crispy - ₹100</p>
-</div>
+        <div class="card">
+            <h3>🍟 French Fries</h3>
+            <p>Hot & Crispy - ₹100</p>
+        </div>
 
-<div class="card">
-<h3>🍰 Chocolate Cake</h3>
-<p>Fresh Homemade Cake - ₹150</p>
-</div>
+        <div class="card">
+            <h3>🍰 Chocolate Cake</h3>
+            <p>Fresh Homemade Cake - ₹150</p>
+        </div>
 
-</div>
+    </div>
 
 </section>
-
-<!-- Gallery Section -->
 
 <section id="gallery">
 
-<h2>Café Gallery</h2>
+    <h2>Our Gallery</h2>
 
-<div class="gallery">
+    <div class="gallery">
 
-<img src="cafe1.jpg" alt="Hepsi Café Interior">
+        <img src="cafe1.jpg" alt="Hepsi Café Interior" loading="lazy">
 
-<img src="cafe2.jpg" alt="Coffee Preparation">
+        <img src="cafe2.jpg" alt="Fresh Coffee at Hepsi Café" loading="lazy">
 
-<img src="food.jpg" alt="Delicious Café Food">
+        <img src="food.jpg" alt="Delicious Food at Hepsi Café" loading="lazy">
 
-<img src="cafe3.jpg" alt="Café Environment">
+        <img src="cafe3.jpg" alt="Hepsi Café Coffee Shop" loading="lazy">
 
-<img src="cafe4.jpg" alt="Dessert Items">
+        <img src="cafe4.jpg" alt="Fresh Desserts at Hepsi Café" loading="lazy">
 
-<img src="cafe5.jpg" alt="Café Seating Area">
+        <img src="cafe5.jpg" alt="Hepsi Café Seating Area" loading="lazy">
 
-</div>
+    </div>
 
 </section>
-
-<!-- Contact Section -->
 
 <section id="contact">
 
-<h2>Contact Us</h2>
+    <h2>Contact Us</h2>
 
-<p>📍 Vijayawada, Andhra Pradesh</p>
+    <div class="contact-info">
 
-<p>📞 +91 98765 43210</p>
+        <p>📍 Vijayawada, Andhra Pradesh</p>
 
-<p>✉ hepsicafe@gmail.com</p>
+        <p>📞 +91 98765 43210</p>
 
-<form>
+        <p>📧 hepsicafe@gmail.com</p>
 
-<label>Name</label>
+    </div>
 
-<input type="text" name="name" placeholder="Enter your name" required>
+    <form>
 
-<label>Email</label>
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
 
-<input type="email" name="email" placeholder="Enter your email" required>
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
 
-<label>Message</label>
+        <textarea
+            name="message"
+            placeholder="Write your message..."
+            required></textarea>
 
-<textarea name="message" placeholder="Write your message..." required></textarea>
+        <button type="submit">
+            Send Message
+        </button>
 
-<button type="submit">
-Send Message
-</button>
+    </form>
+    
+    <div class="map-container">
 
-</form>
+        <iframe
+            src="https://www.google.com/maps?q=Vijayawada&output=embed"
+            width="100%"
+            height="300"
+            style="border:0; border-radius:10px;"
+            loading="lazy"
+            title="Google Maps - Vijayawada">
+        </iframe>
 
-<br><br>
-
-<!-- Google Maps -->
-
-<iframe
-
-src="https://www.google.com/maps?q=Vijayawada&output=embed"
-
-width="100%"
-
-height="300"
-
-style="border:0;border-radius:10px;"
-
-loading="lazy">
-
-</iframe>
-
+    </div>
 
 </section>
 
-<!-- Footer -->
-    
 <footer>
 
-<h3>☕ Hepsi Café</h3>
+    <h3>☕ Hepsi Café</h3>
 
-<p>
-Serving Fresh Coffee & Delicious Food Every Day.
-</p>
+    <p>
+        Serving Fresh Coffee & Delicious Food Every Day.
+    </p>
 
-<p>
+    <p>
+        📧 hepsicafe@gmail.com |
+        📞 +91 98765 43210
+    </p>
 
-📧 hepsicafe@gmail.com
+    <p>
+        🌐 Instagram |
+        Facebook |
+        WhatsApp
+    </p>
 
-|
-
-📞 +91 98765 43210
-
-</p>
-
-<p>
-
-Instagram | Facebook | WhatsApp
-
-</p>
-
-<p>
-
-© 2026 Hepsi Café | Designed by Thalathoti Hepsiba
-
-</p>
+    <p>
+        © 2026 Hepsi Café | Designed by Thalathoti Hepsiba
+    </p>
 
 </footer>
-    
-<script src="script.js"></script>
-    
-</body>
 
+<script src="script.js"></script>
+```
+
+</body>
 
 </html>
