@@ -36,7 +36,7 @@ if (form) {
             return;
         }
 
-        alert("Thank you for contacting Hepsi CafÃ©! We will get back to you soon.");
+        alert("Thank you for contacting Hepsi Café!.");
         form.reset();
     });
 }
